@@ -1,12 +1,12 @@
 "use client"
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import GithubIcon from '../../public/github-icon.svg'
 import LinkedinIcon from '../../public/linkedin-icon.svg'
 
 const EmailSection = () => {
-
+    const [emailSubmitted, setEmailSubmitted] = useState(false)
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {
@@ -31,6 +31,7 @@ const EmailSection = () => {
 
         if (response.status === 'success') {
             console.log('Message sent.')
+            setEmailSubmitted(true)
         }
     }
   return (
@@ -101,6 +102,13 @@ const EmailSection = () => {
                     className='bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full'>
                     Send Message
                 </button>
+                {
+                   emailSubmitted && (
+                    <p className='text-green-500 text-sm mt-2'>
+                        Email sent successfully!
+                    </p>
+                   )
+                }
             </form>
         </div>
     </section>
