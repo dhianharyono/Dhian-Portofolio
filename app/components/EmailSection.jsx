@@ -10,7 +10,7 @@ const EmailSection = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {
-            email: e.target.email.value,
+            from: e.target.email.value,
             subject: e.target.subject.value,
             message: e.target.message.value,
         }
