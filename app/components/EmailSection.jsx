@@ -4,18 +4,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 import GithubIcon from '../../public/github-icon.svg'
 import LinkedinIcon from '../../public/linkedin-icon.svg'
-const fromEmail = process.env.FROM_EMAIL;
 
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false)
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {
-            from: fromEmail,
+            from: 'onboarding@resend.dev',
             email: e.target.email.value,
             subject: e.target.subject.value,
             message: e.target.message.value,
         }
+        console.log(data)
         const JSONdata = JSON.stringify(data);
         const endpoint = "/api/send"
 
