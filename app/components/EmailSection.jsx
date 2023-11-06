@@ -10,12 +10,10 @@ const EmailSection = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {
-            from: 'onboarding@resend.dev',
             email: e.target.email.value,
             subject: e.target.subject.value,
             message: e.target.message.value,
         }
-        console.log(data)
         const JSONdata = JSON.stringify(data);
         const endpoint = "/api/send"
 
