@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className='footer border z-10 border-t-[#33353F] border-r-transparent border-l-transparent text-white'>
         <div className='container p-12 flex justify-between'>
-            <span>LOGO</span>
+            <span>DH</span>
             <p className='text-slate-600'>All right reserved</p>
         </div>
     </footer>
