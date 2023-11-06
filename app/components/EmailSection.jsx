@@ -4,13 +4,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import GithubIcon from '../../public/github-icon.svg'
 import LinkedinIcon from '../../public/linkedin-icon.svg'
+const fromEmail = process.env.FROM_EMAIL;
 
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false)
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {
-            from: e.target.email.value,
+            from: fromEmail,
+            email: e.target.email.value,
             subject: e.target.subject.value,
             message: e.target.message.value,
         }
