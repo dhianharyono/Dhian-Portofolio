@@ -21,7 +21,7 @@ const AboutSection = () => {
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
           <p className='text-base lg:text-lg'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae accusantium hic, velit aliquid minus itaque maiores id quae ullam assumenda veniam eos ratione cum in iusto consectetur eveniet atque.
+            I am a Frontend Developer based in Indonesia. I specialize in creating beautiful, responsive websites and web applications. I have experience working with modern frontend technologies like React, Next.js, and Tailwind CSS. I am passionate about creating accessible and performant web experiences for users. I am always eager to learn new things and improve my skills as a developer.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton selectTab={() => handleTabChange('skills')} active={tab === "skills"}>Skills</TabButton>
