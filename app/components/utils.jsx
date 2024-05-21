@@ -6,7 +6,7 @@ export const navLinks = [
     },
     {
       title: "Project",
-      path: "#project"
+      path: "#projects"
     },
     {
       title: "Contact",

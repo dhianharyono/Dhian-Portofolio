@@ -25,6 +25,7 @@ const ProjectSection = () => {
 
   return (
     <section id="projects">
+      <span class="anchor"></span>
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Project
       </h2>
