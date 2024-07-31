@@ -51,57 +51,21 @@ export const navLinks = [
   
 export const projectsData = [
     {
-      id: 1,
-      title: "React Portfolio Website",
-      description: "Portfolio website to display all my work as a frontend developer",
-      image: "/images/projects/1.png",
-      tag: ["All", "Web"],
-      gitUrl: "https://github.com/dhianharyono/dhian-app",
-      previewUrl: "/",
+      "id": 1,
+      "title": "Portfolio Website",
+      "description": "A personal portfolio website to showcase my skills, projects, and experience as a frontend developer. Built with React, Tailwind CSS, and TypeScript.",
+      "image": "/images/projects/porto-thumbnail.png",
+      "tag": ["All", "Web"],
+      "gitUrl": "https://github.com/dhianharyono/dhian-app",
+      "previewUrl": "/"
     },
-    // {
-    //   id: 2,
-    //   title: "Potography Portfolio Website",
-    //   description: "Project 2 description",
-    //   image: "/images/projects/2.png",
-    //   tag: ["All", "Web"],
-    //   gitUrl: "/",
-    //   previewUrl: "/",
-    // },
-    // {
-    //   id: 3,
-    //   title: "E-commerce Application",
-    //   description: "Project 3 description",
-    //   image: "/images/projects/3.png",
-    //   tag: ["All", "Web"],
-    //   gitUrl: "/",
-    //   previewUrl: "/",
-    // },
-    // {
-    //   id: 4,
-    //   title: "Food Ordering Application",
-    //   description: "Project 4 description",
-    //   image: "/images/projects/4.png",
-    //   tag: ["All", "Mobile"],
-    //   gitUrl: "/",
-    //   previewUrl: "/",
-    // },
-    // {
-    //   id: 5,
-    //   title: "React Firebase Template",
-    //   description: "Authentication and CRUD operations",
-    //   image: "/images/projects/5.png",
-    //   tag: ["All", "Web"],
-    //   gitUrl: "/",
-    //   previewUrl: "/",
-    // },
-    // {
-    //   id: 6,
-    //   title: "Full-stack Roadmap",
-    //   description: "Project 5 description",
-    //   image: "/images/projects/6.png",
-    //   tag: ["All", "Web"],
-    //   gitUrl: "/",
-    //   previewUrl: "/",
-    // },
+    {
+      "id": 2,
+      "title": "Soto List",
+      "description": "A simple and functional to-do list application for managing tasks. Implemented with React, Tailwind CSS, and TypeScript, featuring task addition, deletion, and completion.",
+      "image": "/images/projects/todo-thumbnail.png",
+      "tag": ["All", "Web"],
+      "gitUrl": "https://github.com/dhianharyono/todo-list",
+      "previewUrl": "https://todo-list-blush-mu.vercel.app/"
+    }
   ];
