@@ -59,13 +59,13 @@ export const projectsData = [
       "gitUrl": "https://github.com/dhianharyono/dhian-app",
       "previewUrl": "/"
     },
-    {
-      "id": 2,
-      "title": "Soto List",
-      "description": "A simple and functional to-do list application for managing tasks. Implemented with React, Tailwind CSS, and TypeScript, featuring task addition, deletion, and completion.",
-      "image": "/images/projects/todo-thumbnail.png",
-      "tag": ["All", "Web"],
-      "gitUrl": "https://github.com/dhianharyono/todo-list",
-      "previewUrl": "https://todo-list-blush-mu.vercel.app/"
-    }
+    // {
+    //   "id": 2,
+    //   "title": "Soto List",
+    //   "description": "A simple and functional to-do list application for managing tasks. Implemented with React, Tailwind CSS, and TypeScript, featuring task addition, deletion, and completion.",
+    //   "image": "/images/projects/todo-thumbnail.png",
+    //   "tag": ["All", "Web"],
+    //   "gitUrl": "https://github.com/dhianharyono/todo-list",
+    //   "previewUrl": "https://todo-list-blush-mu.vercel.app/"
+    // }
   ];
