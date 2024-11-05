@@ -59,13 +59,13 @@ export const projectsData = [
       "gitUrl": "https://github.com/dhianharyono/dhian-app",
       "previewUrl": "/"
     },
-    // {
-    //   "id": 2,
-    //   "title": "Soto List",
-    //   "description": "A simple and functional to-do list application for managing tasks. Implemented with React, Tailwind CSS, and TypeScript, featuring task addition, deletion, and completion.",
-    //   "image": "/images/projects/todo-thumbnail.png",
-    //   "tag": ["All", "Web"],
-    //   "gitUrl": "https://github.com/dhianharyono/todo-list",
-    //   "previewUrl": "https://todo-list-blush-mu.vercel.app/"
-    // }
+    {
+      "id": 2,
+      "title": "My Fashion Store",
+      "description": "An elegant and user-friendly fashion e-commerce website. Features include product browsing, shopping cart, and secure checkout, providing a seamless online shopping experience.",
+      "image": "/images/projects/fashion-thumbnail.png",
+      "tag": ["All", "Web"],
+      "gitUrl": "https://github.com/dhianharyono/myfashion",
+      "previewUrl": "https://myfashion-ten.vercel.app/"
+    }    
   ];
