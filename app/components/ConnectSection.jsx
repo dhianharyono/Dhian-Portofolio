@@ -11,8 +11,6 @@ const ConnectSection = () => {
   return (
     <section id='contact' className='relative py-24'>
       <span className='anchor' />
-      <div className='absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2 h-80 w-80 rounded-full blur-lg z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent'></div>
-
       <div className='relative z-10 grid md:grid-cols-2 gap-8 items-center px-4'>
         <div>
           <h2 className='text-3xl font-bold text-white mb-4'>Let’s Connect</h2>

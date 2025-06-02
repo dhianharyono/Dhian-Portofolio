@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /**
  * Smooth scrolling on the whole document
  */
@@ -35,7 +34,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.anchor {  
+.anchor {
   display: block;
   height: 100px;
   margin-top: -100px;
