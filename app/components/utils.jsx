@@ -1,29 +1,34 @@
-export const navLinks = [
-  {
-    title: 'About',
-    path: '#about',
-  },
-  {
-    title: 'Project',
-    path: '#projects',
-  },
-  {
-    title: 'Let`s Connect',
-    path: '#contact',
-  },
-];
+import {
+  SiJavascript,
+  SiReact,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+} from 'react-icons/si';
+import { FaUniversity } from 'react-icons/fa';
+import { HiOutlineBadgeCheck } from 'react-icons/hi';
 
 export const TAB_DATA = [
   {
-    title: 'Skills',
+    title: 'Tech Stack',
     id: 'skills',
     content: (
-      <ul className='list-disc pl-2'>
-        <li>Javascript</li>
-        <li>ReactJs</li>
-        <li>Tailwind</li>
-        <li>NextJs</li>
-        <li>Typescript</li>
+      <ul className='grid grid-cols-2 gap-1 pl-2'>
+        <li className='flex items-center gap-2'>
+          <SiJavascript className='text-yellow-400' /> JavaScript
+        </li>
+        <li className='flex items-center gap-2'>
+          <SiTypescript className='text-blue-500' /> TypeScript
+        </li>
+        <li className='flex items-center gap-2'>
+          <SiReact className='text-cyan-400' /> React.js
+        </li>
+        <li className='flex items-center gap-2'>
+          <SiNextdotjs className='text-white' /> Next.js
+        </li>
+        <li className='flex items-center gap-2'>
+          <SiTailwindcss className='text-sky-400' /> Tailwind CSS
+        </li>
       </ul>
     ),
   },
@@ -31,19 +36,39 @@ export const TAB_DATA = [
     title: 'Education',
     id: 'education',
     content: (
-      <ul className='list-disc pl-2'>
-        <li>Telkom University, S1 Teknik Informatika</li>
+      <ul className='list-none pl-2'>
+        <li className='flex items-center gap-2'>
+          <FaUniversity className='text-red-500' />
+          Telkom University – B.Sc. in Informatics
+        </li>
       </ul>
     ),
   },
   {
-    title: 'certifications',
+    title: 'Certifications',
     id: 'certifications',
     content: (
-      <ul className='list-disc pl-2'>
-        <li>Coming Soon</li>
+      <ul className='list-none pl-2'>
+        <li className='flex items-center gap-2'>
+          <HiOutlineBadgeCheck className='text-gray-400' /> Coming Soon
+        </li>
       </ul>
     ),
+  },
+];
+
+export const navLinks = [
+  {
+    title: 'About Me',
+    path: '#about',
+  },
+  {
+    title: 'View My Work',
+    path: '#projects',
+  },
+  {
+    title: 'Contact Me!',
+    path: '#contact',
   },
 ];
 
@@ -57,6 +82,7 @@ export const projectsData = [
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/dhianharyono/dhian-app',
     previewUrl: '/',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
     id: 2,
@@ -67,5 +93,6 @@ export const projectsData = [
     tag: ['All', 'Web'],
     gitUrl: 'https://github.com/dhianharyono/myfashion',
     previewUrl: 'https://myfashion-ten.vercel.app/',
+    tech: ['React.js', 'TypeScript', 'Tailwind CSS'],
   },
 ];

@@ -1,11 +1,11 @@
-"use client"
-import Image from 'next/image'
-import React, { useState, useTransition } from 'react'
-import TabButton from './TabButton'
-import { TAB_DATA } from './utils'
+'use client';
+import Image from 'next/image';
+import React, { useState, useTransition } from 'react';
+import TabButton from './TabButton';
+import { TAB_DATA } from './utils';
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState('skills');
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -15,27 +15,59 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" className='text-white'>
-      <span class="anchor"></span>
-      <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:p'>
-        <Image src="/images/about-image.png" width={500} height={500} alt="about-image"/>
+    <section id='about' className='text-white'>
+      <span className='anchor'></span>
+      <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:p-6 mb-10'>
+        <Image
+          src='/images/about-image.png'
+          width={500}
+          height={500}
+          alt='Dhian Haryono working illustration'
+          loading='lazy'
+        />
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-          <p className='text-base lg:text-lg'>
-            I am a Frontend Developer based in Indonesia. I specialize in creating beautiful, responsive websites and web applications. I have experience working with modern frontend technologies like React, Next.js, and Tailwind CSS. I am passionate about creating accessible and performant web experiences for users. I am always eager to learn new things and improve my skills as a developer.
+          <p className='text-base lg:text-lg text-gray-300'>
+            I`m Dhian Haryono, a Frontend Developer based in Indonesia with over
+            5 years of experience crafting modern web interfaces. I specialize
+            in building fast, accessible, and responsive applications using
+            technologies like <strong>React</strong>, <strong>Next.js</strong>,
+            and <strong>Tailwind CSS</strong>.
+            <br />
+            <br />
+            I’m passionate about creating user-focused digital experiences and
+            writing clean, scalable code. Whether collaborating in teams or
+            working independently, I always aim to deliver pixel-perfect,
+            performant results.
+            <br />
+            <br />
+            Currently, I’m leveling up my skills to become a Senior Frontend
+            Developer and open to freelance or remote opportunities.
           </p>
-          <div className="flex flex-row justify-start mt-8">
-            <TabButton selectTab={() => handleTabChange('skills')} active={tab === "skills"}>Skills</TabButton>
-            <TabButton selectTab={() => handleTabChange('education')} active={tab === "education"}>Education</TabButton>
+
+          <div className='flex flex-row justify-start mt-8'>
+            <TabButton
+              selectTab={() => handleTabChange('skills')}
+              active={tab === 'skills'}
+            >
+              Tech Stack
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange('education')}
+              active={tab === 'education'}
+            >
+              Education
+            </TabButton>
             {/* <TabButton selectTab={() => handleTabChange('certifications')} active={tab === "certifications"}>Certifications</TabButton> */}
           </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
+
+          <div className='mt-8'>
+            {TAB_DATA.find((t) => t.id === tab)?.content}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;

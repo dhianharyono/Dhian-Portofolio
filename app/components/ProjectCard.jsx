@@ -1,37 +1,60 @@
-import React from 'react'
-import { CodeIcon, EyeIcon } from "@heroicons/react/outline"
-import Link from 'next/link'
+import React from 'react';
+import { CodeIcon, EyeIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({
+  imgUrl,
+  title,
+  description,
+  gitUrl,
+  previewUrl,
+  tech = [],
+}) => {
   return (
-    <div>
+    <div className='rounded-xl overflow-hidden shadow-lg bg-[#1e1e1e] hover:shadow-xl transition-shadow duration-300'>
+      {/* Image & overlay */}
+      <div className='relative h-52 md:h-72 group'>
         <div
-            className='h-52 md:72 rounded-t-xl relative group object-contain'
-            style={{background: `url(${imgUrl})`, backgroundSize: "cover"}}
-        >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
+          className='w-full h-full bg-center bg-cover transition-transform duration-300 transform group-hover:scale-105'
+          style={{ backgroundImage: `url(${imgUrl})` }}
+        ></div>
+        <div className='absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 flex items-center justify-center gap-4 transition-all duration-300'>
           <Link
             href={gitUrl}
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            className='h-12 w-12 flex items-center justify-center rounded-full border border-gray-400 hover:border-white transition-colors'
             target='_blank'
           >
-            <CodeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <CodeIcon className='h-6 w-6 text-gray-400 group-hover:text-white' />
           </Link>
           <Link
             href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            className='h-12 w-12 flex items-center justify-center rounded-full border border-gray-400 hover:border-white transition-colors'
             target='_blank'
           >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <EyeIcon className='h-6 w-6 text-gray-400 group-hover:text-white' />
           </Link>
         </div>
-        </div>
-        <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4">
-            <h5 className='text-xl font-semibold mb-2'>{title}</h5>
-            <p className='text-[#ADB787BE]'>{description}</p>
-        </div>
-    </div>
-  )
-}
+      </div>
 
-export default ProjectCard
+      {/* Text content */}
+      <div className='p-5 text-white'>
+        <h3 className='text-xl font-semibold mb-2'>{title}</h3>
+        <p className='text-sm text-gray-300 mb-4'>{description}</p>
+        {tech.length > 0 && (
+          <div className='flex flex-wrap gap-2'>
+            {tech.map((item, idx) => (
+              <span
+                key={idx}
+                className='text-xs px-2 py-1 bg-gray-700 rounded-full text-gray-100'
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default ProjectCard;
