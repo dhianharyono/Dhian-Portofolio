@@ -20,7 +20,7 @@ const Certificate = () => {
   };
 
   return (
-    <div id='certificate' className='flex justify-center mt-8'>
+    <div id='certificate' className='flex justify-center mt-24'>
       <div className='w-full shadow-xl rounded-2xl'>
         <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
           Certificate

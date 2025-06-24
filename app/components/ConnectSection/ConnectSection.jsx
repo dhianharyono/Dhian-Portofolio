@@ -8,7 +8,7 @@ import LinkedinIcon from '../../../public/linkedin-icon.svg';
 
 const ConnectSection = () => {
   return (
-    <section id='contact' className='relative py-24'>
+    <section id='contact' className='relative py-24 mt-24'>
       <span className='anchor' />
       <div className='relative z-10 grid md:grid-cols-2 gap-8 items-center px-4'>
         <div>

@@ -26,7 +26,7 @@ const Project = () => {
   };
 
   return (
-    <section id='projects' className='py-8'>
+    <section id='projects' className='py-8 mt-24'>
       <span id='anchor'></span>
       <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
         Project

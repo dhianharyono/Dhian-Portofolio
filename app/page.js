@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Connect from './components/ConnectSection/ConnectSection';
 import Certificate from './components/CertificateSection/Certificate';
 import Experience from './components/ExperienceSection/Experience';
+import TechStackIcons from './components/TechStackIcons';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <div className='container mt-24 mx-auto px-12 py-14'>
         <HeroSection />
         <About />
+        <TechStackIcons />
         <Project />
         <Certificate />
         <Experience />

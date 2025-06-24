@@ -1,12 +1,23 @@
+import { FaUniversity } from 'react-icons/fa';
+import { HiOutlineBadgeCheck } from 'react-icons/hi';
+import {
+  FaReact,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaGitAlt,
+} from 'react-icons/fa';
 import {
   SiJavascript,
   SiReact,
-  SiTailwindcss,
   SiNextdotjs,
+  SiTailwindcss,
   SiTypescript,
+  SiPostman,
+  SiVercel,
+  SiFigma,
 } from 'react-icons/si';
-import { FaUniversity } from 'react-icons/fa';
-import { HiOutlineBadgeCheck } from 'react-icons/hi';
 
 export const TAB_DATA = [
   {
@@ -78,6 +89,21 @@ export const navLinks = [
     title: 'Contact Me!',
     path: '#contact',
   },
+];
+
+export const techIcons = [
+  { id: 'react', icon: FaReact, name: 'React' },
+  { id: 'nextjs', icon: SiNextdotjs, name: 'Next.js' },
+  { id: 'javascript', icon: FaJs, name: 'JavaScript' },
+  { id: 'typescript', icon: SiTypescript, name: 'TypeScript' },
+  { id: 'tailwind', icon: SiTailwindcss, name: 'Tailwind CSS' },
+  { id: 'html5', icon: FaHtml5, name: 'HTML5' },
+  { id: 'css3', icon: FaCss3Alt, name: 'CSS3' },
+  { id: 'nodejs', icon: FaNodeJs, name: 'Node.js' },
+  { id: 'git', icon: FaGitAlt, name: 'Git' },
+  { id: 'postman', icon: SiPostman, name: 'Postman' },
+  { id: 'vercel', icon: SiVercel, name: 'Vercel' },
+  { id: 'figma', icon: SiFigma, name: 'Figma' },
 ];
 
 export const projectsData = [

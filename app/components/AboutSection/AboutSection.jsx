@@ -6,7 +6,7 @@ import { TAB_DATA } from '../utils';
 import { motion } from 'framer-motion';
 
 const AboutSection = () => {
-  const [tab, setTab] = useState('skills');
+  const [tab, setTab] = useState('education');
   const [, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -16,7 +16,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section id='about' className='text-white'>
+    <section id='about' className='text-white mt-24'>
       <span className='anchor'></span>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -55,12 +55,6 @@ const AboutSection = () => {
             </p>
 
             <div className='flex flex-row justify-start mt-8'>
-              <TabButton
-                selectTab={() => handleTabChange('skills')}
-                active={tab === 'skills'}
-              >
-                Tech Stack
-              </TabButton>
               <TabButton
                 selectTab={() => handleTabChange('education')}
                 active={tab === 'education'}
