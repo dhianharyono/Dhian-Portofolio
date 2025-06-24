@@ -1,9 +1,9 @@
 import HeroSection from './components/HeroSection/HeroSection';
 import Navbar from './components/Navbar/Navbar';
-import AboutSection from './components/AboutSection/AboutSection';
-import ProjectSection from './components/ProjectSection/ProjectSection';
+import About from './components/AboutSection/AboutSection';
+import Project from './components/ProjectSection/Project';
 import Footer from './components/Footer/Footer';
-import ConnectSection from './components/ConnectSection/ConnectSection';
+import Connect from './components/ConnectSection/ConnectSection';
 import Certificate from './components/CertificateSection/Certificate';
 import Experience from './components/ExperienceSection/Experience';
 
@@ -13,11 +13,11 @@ export default function Home() {
       <Navbar />
       <div className='container mt-24 mx-auto px-12 py-14'>
         <HeroSection />
-        <AboutSection />
-        <ProjectSection />
-        <Experience />
+        <About />
+        <Project />
         <Certificate />
-        <ConnectSection />
+        <Experience />
+        <Connect />
       </div>
       <Footer />
     </main>
