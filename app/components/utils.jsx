@@ -63,8 +63,16 @@ export const navLinks = [
     path: '#about',
   },
   {
-    title: 'View My Work',
+    title: 'My Work',
     path: '#projects',
+  },
+  {
+    title: 'Experience',
+    path: '#experience',
+  },
+  {
+    title: 'Certificate',
+    path: '#certificate',
   },
   {
     title: 'Contact Me!',
