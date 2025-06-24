@@ -4,6 +4,8 @@ import AboutSection from './components/AboutSection/AboutSection';
 import ProjectSection from './components/ProjectSection/ProjectSection';
 import Footer from './components/Footer/Footer';
 import ConnectSection from './components/ConnectSection/ConnectSection';
+import Certificate from './components/CertificateSection/Certificate';
+import Experience from './components/ExperienceSection/Experience';
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProjectSection />
+        <Experience />
+        <Certificate />
         <ConnectSection />
       </div>
       <Footer />

@@ -40,7 +40,7 @@ const HeroSection = () => {
           </p>
           <div>
             <Link href={'#contact'}>
-              <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white'>
+              <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-500 text-white'>
                 Hire Me
               </button>
             </Link>

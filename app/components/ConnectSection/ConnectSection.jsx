@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import GithubIcon from '../../../public/github-icon.svg';
 import LinkedinIcon from '../../../public/linkedin-icon.svg';
-import InstagramIcon from '../../../public/ig-image.png';
 
 const ConnectSection = () => {
   return (
@@ -45,19 +44,6 @@ const ConnectSection = () => {
                 className='hover:scale-110 transition-transform duration-200'
                 width={32}
                 height={32}
-              />
-            </Link>
-            <Link
-              href='https://www.instagram.com/dhianharyono/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <Image
-                src={InstagramIcon}
-                alt='Instagram Icon'
-                className='hover:scale-110 transition-transform duration-200'
-                width={25}
-                height={25}
               />
             </Link>
           </div>
