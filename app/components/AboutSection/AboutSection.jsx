@@ -2,11 +2,11 @@
 import Image from 'next/image';
 import React, { useState, useTransition } from 'react';
 import TabButton from './TabButton';
-import { TAB_DATA } from './utils';
+import { TAB_DATA } from '../utils';
 
 const AboutSection = () => {
   const [tab, setTab] = useState('skills');
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
     startTransition(() => {

@@ -3,9 +3,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import GithubIcon from '../../public/github-icon.svg';
-import LinkedinIcon from '../../public/linkedin-icon.svg';
-import InstagramIcon from '../../public/ig-image.png';
+import GithubIcon from '../../../public/github-icon.svg';
+import LinkedinIcon from '../../../public/linkedin-icon.svg';
+import InstagramIcon from '../../../public/ig-image.png';
 
 const ConnectSection = () => {
   return (
