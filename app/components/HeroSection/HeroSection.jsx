@@ -40,7 +40,7 @@ const HeroSection = () => {
           </p>
           <div>
             <Link href={'#contact'}>
-              <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-500 text-white'>
+              <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:from-blue-600 hover:via-primary-400 hover:to-secondary-200 text-white'>
                 Hire Me
               </button>
             </Link>
@@ -55,7 +55,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className='col-span-4 place-self-center mt-4 lg:mt-0'
         >
-          <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
+          <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative transition-transform duration-300 hover:scale-105'>
             <Image
               className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-[150px]'
               src={'/images/hero-image.jpg'}

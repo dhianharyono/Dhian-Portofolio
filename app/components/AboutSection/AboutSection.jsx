@@ -18,13 +18,15 @@ const AboutSection = () => {
     <section id='about' className='text-white'>
       <span className='anchor'></span>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:p-6 mb-10'>
-        <Image
-          src='/images/about-image.png'
-          width={500}
-          height={500}
-          alt='Dhian Haryono working illustration'
-          loading='lazy'
-        />
+        <div className='relative overflow-hidden transition-transform duration-300 hover:scale-105'>
+          <Image
+            src='/images/about-image.png'
+            width={500}
+            height={500}
+            alt='Dhian Haryono working illustration'
+            loading='lazy'
+          />
+        </div>
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
           <p className='text-base lg:text-lg text-gray-300'>

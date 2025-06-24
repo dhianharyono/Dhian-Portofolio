@@ -149,7 +149,7 @@ export const experience = [
     id: 1,
     title: 'FAB Digital - Core',
     company: 'Telkom Indonesia',
-    duration: 'Jan 2024',
+    duration: 'Jan 2024 - Now',
     description:
       'A digital platform from Telkom Indonesia to manage end to end Fulfillment, Assurance and Billing (purchase order, billing statement, payment, invoice, settlement, Tax invoice) via API and web application.',
     link: null,
