@@ -15,7 +15,7 @@ const Experience = () => {
 
   return (
     <div className='flex justify-center mt-8'>
-      <div className='w-full shadow-xl rounded-2xl p-5 sm:p-8 '>
+      <div className='w-full shadow-xl rounded-2xl'>
         <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
           Experience
         </h2>
