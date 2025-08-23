@@ -61,7 +61,7 @@ const Project = () => {
           <div className='text-center mt-8'>
             <button
               onClick={handleToggleProjects}
-              className='px-6 py-3 rounded-full text-white bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-gradient-to-tl transition-all duration-300'
+              className='px-6 py-3 rounded-full text-white bg-gradient-to-br from-primary-500 to-secondary-500 hover:from-blue-600 hover:via-primary-400 hover:to-secondary-200 transition-all duration-300'
             >
               {showAllProjects ? 'Show Less' : 'Show More'}
             </button>

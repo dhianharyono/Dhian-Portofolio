@@ -95,7 +95,7 @@ const Certificate = () => {
             <div className='flex justify-center mt-8 mb-4'>
               <button
                 onClick={handleShowMore}
-                className='px-6 py-3 rounded-full text-white bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-gradient-to-tl transition-all duration-300'
+                className='px-6 py-3 rounded-full text-white bg-gradient-to-br from-primary-500 to-secondary-500 hover:from-blue-600 hover:via-primary-400 hover:to-secondary-200 transition-all duration-300'
               >
                 Show More
               </button>
