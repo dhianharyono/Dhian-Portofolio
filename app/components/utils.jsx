@@ -113,7 +113,7 @@ export const techIcons = [
 export const projectsData = [
   {
     id: 1,
-    title: 'Lumina Modern E-Commerce Storefront',
+    title: 'Lumina Modern E-Commerce',
     description:
       'An elegant and user-friendly fashion e-commerce website. Features include product browsing, shopping cart, and secure checkout, providing a seamless online shopping experience.',
     image: '/images/lumina.png',

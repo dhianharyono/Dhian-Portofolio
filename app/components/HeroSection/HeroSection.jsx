@@ -47,7 +47,7 @@ const HeroSection = () => {
               Hello, I&apos;m
             </span>
           </h1>
-          <div className='block min-h-[60px] sm:min-h-[80px] lg:min-h-[100px] text-3xl sm:text-5xl lg:text-7xl font-bold text-white'>
+          <div className='block mb-0 md:mb-2 text-3xl sm:text-5xl lg:text-7xl font-bold text-white'>
             Dhian Haryono
           </div>
           <p className='text-[#ADB7BE] text-lg sm:text-xl lg:text-5xl leading-relaxed max-w-2xl font-bold mb-0 md:mb-2'>
