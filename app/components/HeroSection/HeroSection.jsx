@@ -42,18 +42,18 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className='col-span-7 place-self-center text-center sm:text-left justify-self-start'
         >
-          <h1 className='text-white mb-2 text-3xl font-extrabold tracking-tight pb-4'>
+          <h1 className='text-white mb-2 text-3xl font-extrabold tracking-tight'>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 glow-text'>
               Hello, I&apos;m
             </span>
           </h1>
-          <div className='block min-h-[60px] sm:min-h-[80px] lg:min-h-[100px] text-4xl sm:text-5xl lg:text-7xl font-bold text-white'>
+          <div className='block min-h-[60px] sm:min-h-[80px] lg:min-h-[100px] text-3xl sm:text-5xl lg:text-7xl font-bold text-white'>
             Dhian Haryono
           </div>
-          <p className='text-[#ADB7BE] text-lg sm:text-xl lg:text-5xl mb-3 leading-relaxed max-w-2xl font-bold'>
+          <p className='text-[#ADB7BE] text-lg sm:text-xl lg:text-5xl leading-relaxed max-w-2xl font-bold mb-0 md:mb-2'>
             Senior Front-End Engineer
           </p>
-          <p className='text-[#ADB7BE] text-lg mb-8 leading-relaxed max-w-2xl'>
+          <p className='text-[#ADB7BE] text-[10px] md:text-lg mb-8 leading-relaxed max-w-2xl'>
             5+ years building scalable and beautiful web interfaces. Currently
             freelancing and open for projects.
           </p>

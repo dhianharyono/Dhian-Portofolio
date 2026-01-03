@@ -27,10 +27,10 @@ const Project = () => {
 
   return (
     <section id='projects' className='container py-8 mt-32 relative'>
-      <h2 className='text-center text-4xl font-bold text-white mt-4 mb-2'>
+      <h2 className='text-center text-xl md:text-4xl font-bold text-white mt-4 mb-2'>
         Selected Project
       </h2>
-      <p className='text-center text-lg md:text-xl text-gray-400 mb-16'>
+      <p className='text-center text-sm md:text-xl text-gray-400 mb-16'>
         Production systems, not demos
       </p>
       <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>

@@ -20,7 +20,7 @@ const ProjectCard = ({
           <div className='p-2 rounded-lg bg-primary-500/10 text-primary-400'>
             <CodeIcon className='h-6 w-6' />
           </div>
-          <h3 className='text-lg font-bold text-white group-hover:text-primary-400 transition-colors'>
+          <h3 className='text-sm md:text-lg font-bold text-white group-hover:text-primary-400 transition-colors'>
             {title}
           </h3>
         </div>

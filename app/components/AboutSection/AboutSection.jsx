@@ -12,14 +12,14 @@ const AboutSection = () => {
         className='col-span-4 place-self-center mt-4 lg:mt-0'
       >
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full px-4 md:px-0 max-w-6xl mx-auto'>
-          <h2 className='text-4xl font-bold text-white mb-2 glow-text text-center'>
+          <h2 className='text-xl md:text-4xl font-bold text-white mb-2 glow-text text-center'>
             About Me
           </h2>
-          <p className='text-center text-lg md:text-xl text-gray-400 mb-16'>
+          <p className='text-center text-sm md:text-xl text-gray-400 mb-16'>
             Engineer mindset. Product impact.
           </p>
           <div className='max-w-4xl mx-auto'>
-            <p className='text-base md:text-lg text-gray-300 mb-6 leading-relaxed md:leading-loose text-left'>
+            <p className='text-sm md:text-lg text-gray-300 mb-6 leading-relaxed md:leading-loose text-left'>
               I&apos;m Dhian Haryono, a Frontend Developer based in Indonesia
               with over 5 years of experience crafting modern web interfaces. I
               specialize in building fast, accessible, and responsive
@@ -28,13 +28,13 @@ const AboutSection = () => {
               <strong className='text-white'>Next.js</strong>, and{' '}
               <strong className='text-white'>Tailwind CSS</strong>.
             </p>
-            <p className='text-base md:text-lg text-gray-300 mb-6 leading-relaxed md:leading-loose text-left'>
+            <p className='text-sm md:text-lg text-gray-300 mb-6 leading-relaxed md:leading-loose text-left'>
               I&apos;m passionate about creating user-focused digital
               experiences and writing clean, scalable code. Whether
               collaborating in teams or working independently, I always aim to
               deliver pixel-perfect, performant results.
             </p>
-            <p className='text-base md:text-lg text-gray-300 leading-relaxed md:leading-loose text-left'>
+            <p className='text-sm md:text-lg text-gray-300 leading-relaxed md:leading-loose text-left'>
               Currently, I&apos;m leveling up my skills to become a Senior
               Frontend Developer and open to freelance or remote opportunities.
             </p>

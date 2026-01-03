@@ -83,10 +83,10 @@ const CoreExpertise = () => {
     return (
         <section id='services' className='mt-32 relative'>
             <div className='text-center mb-16'>
-                <h2 className='text-4xl font-bold text-white mb-2 glow-text'>
+                <h2 className='text-xl md:text-4xl font-bold text-white mb-2 glow-text'>
                     Core Expertise
                 </h2>
-                <p className='text-lg md:text-xl text-gray-400'>
+                <p className='text-sm md:text-xl text-gray-400'>
                     What I consistently deliver
                 </p>
             </div>

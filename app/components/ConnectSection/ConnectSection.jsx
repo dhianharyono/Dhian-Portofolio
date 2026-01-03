@@ -1,10 +1,9 @@
 'use client';
 
 import React, { useRef, useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import GithubIcon from '../../../public/github-icon.svg';
-import LinkedinIcon from '../../../public/linkedin-icon.svg';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiUpwork } from 'react-icons/si';
 import emailjs from '@emailjs/browser';
 
 const ConnectSection = () => {
@@ -45,8 +44,10 @@ const ConnectSection = () => {
       <div className='relative z-10 grid md:grid-cols-2 gap-12 md:gap-20 items-start px-4'>
         {/* Left Column: Get in Touch & Socials */}
         <div>
-          <h5 className='text-3xl font-bold text-white mb-4'>Get In Touch</h5>
-          <p className='text-[#ADB7BE] text-base mb-8 max-w-md'>
+          <h5 className='text-xl md:text-3xl font-bold text-white mb-4'>
+            Get In Touch
+          </h5>
+          <p className='text-[#ADB7BE] text-sm md:text-base mb-8 max-w-md'>
             Have a project in mind? Let`s discuss how I can help bring your
             ideas to life.
           </p>
@@ -116,17 +117,25 @@ const ConnectSection = () => {
               href='https://github.com/dhianharyono'
               target='_blank'
               aria-label='GitHub'
-              className='p-3 rounded-full bg-[#181818] border border-white/5 hover:bg-white/10 hover:scale-110 transition-all'
+              className='p-3 rounded-full bg-[#181818] border border-white/5 hover:bg-white/10 hover:scale-110 transition-all group'
             >
-              <Image src={GithubIcon} alt='GitHub' width={24} height={24} />
+              <FaGithub className='w-6 h-6 text-white group-hover:text-primary-500 transition-colors' />
             </Link>
             <Link
               href='https://www.linkedin.com/in/dhian-haryono/'
               target='_blank'
               aria-label='LinkedIn'
-              className='p-3 rounded-full bg-[#181818] border border-white/5 hover:bg-white/10 hover:scale-110 transition-all'
+              className='p-3 rounded-full bg-[#181818] border border-white/5 hover:bg-white/10 hover:scale-110 transition-all group'
             >
-              <Image src={LinkedinIcon} alt='LinkedIn' width={24} height={24} />
+              <FaLinkedin className='w-6 h-6 text-white group-hover:text-primary-500 transition-colors' />
+            </Link>
+            <Link
+              href='https://www.upwork.com/freelancers/~01004f811bfcb5f1ed'
+              target='_blank'
+              aria-label='Upwork'
+              className='p-3 rounded-full bg-[#181818] border border-white/5 hover:bg-white/10 hover:scale-110 transition-all group'
+            >
+              <SiUpwork className='w-6 h-6 text-white group-hover:text-primary-500 transition-colors' />
             </Link>
           </div>
         </div>

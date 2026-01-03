@@ -3,19 +3,19 @@ import { experiences } from '../utils';
 
 const Experience = () => {
   return (
-    <div id='experience' className='container mt-32 relative'>
+    <div id='experience' className='container mt-32 relative px-4 md:px-0'>
       <div className='w-full'>
-        <h2 className='text-4xl font-bold text-white mb-2 glow-text text-center'>
+        <h2 className='text-xl md:text-4xl font-bold text-white mb-2 glow-text text-center'>
           Work Experience
         </h2>
-        <p className='text-center text-lg md:text-xl text-gray-400 mb-16'>
+        <p className='text-center text-sm md:text-xl text-gray-400 mb-12 md:mb-16'>
           Roles, responsibilities, and measurable impact
         </p>
 
         <div className='relative w-full max-w-6xl mx-auto'>
           {/* Central Line */}
           <div className='absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] bg-gray-800 -translate-x-1/2 hidden md:block'></div>
-          <div className='absolute left-8 top-0 bottom-0 w-[2px] bg-gray-800 md:hidden'></div>
+          <div className='absolute left-5 top-0 bottom-0 w-[2px] bg-gray-800 md:hidden'></div>
 
           <div className='space-y-12'>
             {experiences.map((exp, index) => {
@@ -27,14 +27,14 @@ const Experience = () => {
                 >
                   {/* Timeline Dot */}
                   <div className='absolute left-8 md:left-1/2 top-0 w-4 h-4 rounded-full bg-primary-500 border-4 border-[#121212] -translate-x-1/2 z-10 shadow-[0_0_0_4px_rgba(59,130,246,0.2)] md:block hidden'></div>
-                  <div className='absolute left-8 top-0 w-4 h-4 rounded-full bg-primary-500 border-4 border-[#121212] -translate-x-2 z-10 md:hidden'></div>
+                  <div className='absolute left-5 top-0 w-4 h-4 rounded-full bg-primary-500 border-4 border-[#121212] -translate-x-2 z-10 md:hidden'></div>
 
                   {/* Empty Side (Desktop) */}
                   <div className='hidden md:block w-5/12'></div>
 
                   {/* Content Card */}
-                  <div className='w-full md:w-5/12 pl-16 md:pl-0'>
-                    <div className='p-6 md:p-8 rounded-2xl bg-[#181818] border border-white/5 hover:border-primary-500/30 transition-all duration-300 relative group'>
+                  <div className='w-full md:w-5/12 pl-12 md:pl-0'>
+                    <div className='p-5 md:p-8 rounded-2xl bg-[#181818] border border-white/5 hover:border-primary-500/30 transition-all duration-300 relative group'>
 
                       {/* Date Badge */}
                       <div className='flex items-center gap-2 mb-4'>
@@ -49,7 +49,7 @@ const Experience = () => {
                         )}
                       </div>
 
-                      <h3 className='text-xl md:text-2xl font-bold text-white mb-1 group-hover:text-primary-400 transition-colors'>
+                      <h3 className='text-lg md:text-2xl font-bold text-white mb-1 group-hover:text-primary-400 transition-colors'>
                         {exp.title}
                       </h3>
 
@@ -58,21 +58,21 @@ const Experience = () => {
                         <span className='text-sm text-gray-500'>{exp.type} • {exp.location}</span>
                       </div>
 
-                      <p className='text-gray-400 mb-6 text-sm leading-relaxed'>
+                      <p className='text-gray-300 mb-6 text-sm md:text-base leading-relaxed'>
                         {exp.description}
                       </p>
 
                       {/* Responsibilities */}
                       <div className='mb-4'>
-                        <h4 className='text-sm font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-2'>
+                        <h4 className='text-xs md:text-sm font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-2'>
                           <span className='w-1 h-1 rounded-full bg-primary-500'></span>
                           Responsibilities
                         </h4>
                         <ul className='space-y-2'>
                           {exp.responsibilities?.map((item, idx) => (
-                            <li key={idx} className='flex items-start text-sm text-gray-400'>
+                            <li key={idx} className='flex items-start text-sm md:text-sm text-gray-400'>
                               <span className='mr-2 mt-1.5 h-1 w-1 rounded-full bg-gray-600 flex-shrink-0'></span>
-                              {item}
+                              <span className='text-gray-300 md:text-gray-400'>{item}</span>
                             </li>
                           ))}
                         </ul>
@@ -81,15 +81,15 @@ const Experience = () => {
                       {/* Achievements */}
                       {exp.achievements?.length > 0 && (
                         <div>
-                          <h4 className='text-sm font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-2'>
+                          <h4 className='text-xs md:text-sm font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-2'>
                             <span className='w-1 h-1 rounded-full bg-secondary-500'></span>
                             Key Achievements
                           </h4>
                           <ul className='space-y-2'>
                             {exp.achievements.map((item, idx) => (
-                              <li key={idx} className='flex items-start text-sm text-gray-400'>
+                              <li key={idx} className='flex items-start text-sm md:text-sm text-gray-400'>
                                 <span className='mr-2 mt-1.5 h-1 w-1 rounded-full bg-gray-600 flex-shrink-0'></span>
-                                {item}
+                                <span className='text-gray-300 md:text-gray-400'>{item}</span>
                               </li>
                             ))}
                           </ul>
