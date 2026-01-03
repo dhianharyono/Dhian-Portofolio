@@ -70,20 +70,24 @@ export const TAB_DATA = [
 
 export const navLinks = [
   {
-    title: 'About Me',
-    path: '#about',
+    title: 'Home',
+    path: '#home',
   },
   {
-    title: 'Project',
-    path: '#projects',
+    title: 'About Me',
+    path: '#about',
   },
   {
     title: 'Experience',
     path: '#experience',
   },
   {
-    title: 'Certificate',
-    path: '#certificate',
+    title: 'Project',
+    path: '#projects',
+  },
+  {
+    title: 'Skill',
+    path: '#services',
   },
   {
     title: 'Contact Me!',
@@ -109,93 +113,21 @@ export const techIcons = [
 export const projectsData = [
   {
     id: 1,
-    title: 'Portfolio Website',
-    description:
-      'A personal portfolio website to showcase my skills, projects, and experience as a frontend developer. Built with React, Tailwind CSS, and TypeScript.',
-    image: '/images/projects/porto-thumbnail.png',
-    gitUrl: 'https://github.com/dhianharyono/dhian-app',
-    previewUrl: '/',
-    tech: ['Next.js', 'Tailwind CSS'],
-  },
-  {
-    id: 2,
-    title: 'My Fashion Store',
+    title: 'Lumina Modern E-Commerce Storefront',
     description:
       'An elegant and user-friendly fashion e-commerce website. Features include product browsing, shopping cart, and secure checkout, providing a seamless online shopping experience.',
-    image: '/images/projects/fashion-thumbnail.png',
-    gitUrl: 'https://github.com/dhianharyono/myfashion',
-    previewUrl: 'https://myfashion-ten.vercel.app/',
-    tech: ['React.js', 'TypeScript', 'Tailwind CSS'],
-  },
-  {
-    id: 1,
-    title: 'FAB Digital - Core',
-    description:
-      'A digital platform from Telkom Indonesia to manage end-to-end Fulfillment, Assurance, and Billing (purchase order, billing statement, payment, invoice, settlement, Tax invoice) via API and web application.',
-    image: '/images/projects/fabd.png',
-    gitUrl: null,
-    previewUrl: null,
-    tech: ['React.js', 'Vite', 'TypeScript', 'Tailwind CSS'],
+    gitUrl: 'https://github.com/dhianharyono/lumina',
+    previewUrl: 'https://lumina-seven-navy.vercel.app/',
+    tech: ['React.js', 'Next.js', 'TypeScript', 'Tailwind'],
   },
   {
     id: 2,
-    title: 'MyTenS - Dashboard Management Data',
+    title: 'Tracer Study SMAN 1 TAWANGSARI',
     description:
-      'MyTenS - Dashboard Management Data is a digital portal that makes it easier for management to see all AM activity. By seeing all AM activity, management can provide the best plan for our product to get the highest income for the company. This portal is used for internal Telkom Group.',
-    image: null,
-    gitUrl: null,
-    previewUrl: null,
-    tech: ['React.js'],
-  },
-  {
-    id: 3,
-    title: 'MyTDS - Product Catalog Dashboard',
-    description:
-      'MyTDS - Product Catalog Dashboard is a digital portal that makes it easier for product owners and management to add, submit, and approve product additions to product catalog content. By adding this product, it will guarantee the newness of the product before it is used by the user. This portal is used for internal Telkom Group.',
-    image: null,
-    gitUrl: null,
-    previewUrl: null,
-    tech: ['React.js'],
-  },
-  {
-    id: 4,
-    title: 'Digital Touch Point Digital Service Assurance (DTP-DSA)',
-    description:
-      'Digital Touch Point Digital Service Assurance (DTP DSA) is a digital portal that plays a role in making it easier for Product Owners (POs) to apply for product testing. Through this tester, product quality will be guaranteed before being used by users. This portal is used for internal Telkom Group.',
-    image: null,
-    gitUrl: null,
-    previewUrl: null,
-    tech: ['React.js'],
-  },
-  {
-    id: 5,
-    title: 'Dashboard Smart City Nusantara',
-    description:
-      'Internship project at Tribe Smart City, Digital Services Division. I was seconded to develop the Smart City Nusantara Dashboard at the Front End. The programming language used is React Js.',
-    image: null,
-    gitUrl: null,
-    previewUrl: null,
-    tech: ['React.js'],
-  },
-  {
-    id: 6,
-    title: 'Sistem Informasi Calon Legislatif DIY',
-    description:
-      'Is one of the projects during practical work in Jogjasite. Creating a legislative candidate information portal for a political party. This portal is equipped with dynamic content that can be controlled via the admin panel.',
-    image: null,
-    gitUrl: null,
-    previewUrl: null,
-    tech: [],
-  },
-  {
-    id: 7,
-    title: 'The Java Holidays - Travel Website',
-    description:
-      'Is one of the projects during practical work in Jogjasite. Creating a tourist information portal and can also be used to book tour packages. This portal is equipped with dynamic content that can be controlled via the admin panel.',
-    image: null,
-    gitUrl: null,
-    previewUrl: null,
-    tech: [],
+      'A web application for tracking and managing alumni data. It allows users to register, update profiles, and view statistics about alumni employment and education history.',
+    gitUrl: 'https://github.com/dhianharyono/tracer-study',
+    previewUrl: 'https://tracerstudy-smanta.vercel.app/',
+    tech: ['React.js', 'Next.js', 'TypeScript', 'Tailwind'],
   },
 ];
 
@@ -243,40 +175,81 @@ export const experiences = [
     id: 1,
     title: 'Frontend Developer',
     company: 'Telkom Indonesia',
-    duration: 'Aug 2019 - Present • 5 years 11 months',
+    type: 'Full-time',
+    duration: 'Aug 2019 - Present',
     location: 'Bandung Area, West Java, Indonesia',
     description:
-      'As a Frontend Developer in the Digital Product Engineer, Digital Business Technology Chapter, I develop user-friendly web pages using React.js. I also collaborate closely with back-end developers and web designers to enhance usability and overall user experience.',
+      'Developing high-scale digital platforms for Telkom Group using modern frontend technologies.',
+    responsibilities: [
+      'Developed user-friendly web pages using React.js and Next.js for core enterprise applications.',
+      'Collaborated closely with back-end developers and web designers to enhance usability and overall user experience.',
+      'Maintained and optimized legacy codebases to improve performance and scalability.',
+    ],
+    achievements: [
+      'Delivered platforms used by 1.1M+ users',
+      'Built reusable component system across 10+ projects',
+      'Reduced development time by ~40%',
+      'Maintained >80% test coverage across projects',
+    ],
     startYear: 'NOW',
   },
   {
     id: 2,
-    title: 'Frontend Developer (Internship)',
+    title: 'Frontend Developer',
     company: 'Telkom Indonesia',
-    duration: 'Jan 2019 - Jun 2019 • 6 months',
+    type: 'Internship',
+    duration: 'Jan 2019 - Jun 2019',
     location: 'Bandung Area, West Java, Indonesia',
     description:
-      'During my internship with the Tribe Smart City, Digital Service Division, I contributed to the Smart City Nusantara project as a Junior Frontend Developer. My responsibilities included creating a user-friendly dashboard website.',
+      'Contributed to the Smart City Nusantara project as a Junior Frontend Developer.',
+    responsibilities: [
+      'Built interactive dashboard components for Smart City monitoring systems.',
+      'Participated in daily stand-ups and agile development cycles.',
+      'Assisted in UI testing and bug fixing for the main portal.',
+    ],
+    achievements: [
+      'Developed a key visualization module for the Smart City dashboard.',
+      'Completed the internship with high commendation from the lead engineer.',
+    ],
     startYear: '2019',
   },
   {
     id: 3,
     title: 'Mobile Web Specialist',
     company: 'Google Developers Kejar',
-    duration: 'Nov 2018 - Dec 2018 • 2 months',
+    type: 'Scholarship',
+    duration: 'Nov 2018 - Dec 2018',
     location: 'Bandung',
     description:
-      'This was a collaborative, community-based learning program that combined online materials with offline study groups. The program, known as KEJAR (Study Group), was initiated by the Google Developers team.',
+      'Collaborative, community-based learning program initiated by the Google Developers team.',
+    responsibilities: [
+      'Completed intensive training on Mobile Web technologies (PWA, Service Workers).',
+      'Collaborated with peers to build a final project demonstrating mobile-first principles.',
+    ],
+    achievements: [
+      'Certified as a Mobile Web Specialist upon program completion.',
+      'Built a fully offline-capable web application as the final project.',
+    ],
     startYear: '2018',
   },
   {
     id: 4,
     title: 'Junior Web Developer',
     company: 'Jogjasite',
-    duration: 'Jun 2018 - Jul 2018 • 2 months',
-    location: 'Yogyakarta Area, Yogyakarta, Indonesia',
+    type: 'Internship',
+    duration: 'Jun 2018 - Jul 2018',
+    location: 'Yogyakarta',
     description:
-      'As a Junior Web Developer at Jogjasite, Superspace Corp., I completed two website projects. The first was for JavaHolidays travel, and the second was a political website designed to provide information about electoral candidates.',
+      'Completed two website projects: a travel portal and a political information site.',
+    responsibilities: [
+      'Developed static and dynamic web pages using PHP and jQuery.',
+      'Managed content updates via a custom CMS.',
+      'Ensured cross-browser compatibility for client websites.',
+    ],
+    achievements: [
+      'Launched "The Java Holidays" travel website ahead of schedule.',
+      'Implemented a dynamic candidate search feature for the political portal.',
+    ],
     startYear: '2018',
   },
 ];

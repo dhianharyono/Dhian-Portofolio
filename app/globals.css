@@ -2,41 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/**
- * Smooth scrolling on the whole document
- */
-html {
-  --scroll-behavior: smooth !important;
-  scroll-behavior: smooth !important;
-}
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 10, 10;
+  --background-end-rgb: 10, 10, 10;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 100px;
+  /* Offset for sticky navbar */
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #0a0a0a;
+  overflow-x: hidden;
 }
 
-.anchor {
-  display: block;
-  height: 100px;
-  margin-top: -100px;
-  visibility: hidden;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Selection Color */
+::selection {
+  background: rgba(147, 51, 234, 0.5);
+  /* Purple primary color */
+  color: white;
+}
+
+/* Utilities */
+.glass-effect {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
 }
