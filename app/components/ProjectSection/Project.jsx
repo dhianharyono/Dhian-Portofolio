@@ -26,14 +26,14 @@ const Project = () => {
   };
 
   return (
-    <section id='projects' className='container py-8 mt-32 relative'>
+    <section id='projects' className=' mt-32 relative'>
       <h2 className='text-center text-xl md:text-4xl font-bold text-white mt-4 mb-2'>
-        Selected Project
+        My Projects
       </h2>
       <p className='text-center text-sm md:text-xl text-gray-400 mb-16'>
         Production systems, not demos
       </p>
-      <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>
+      <ul ref={ref} className='grid md:grid-cols-3 gap-6 md:gap-8'>
         {projectsToDisplay.map((project, index) => (
           <motion.li
             key={project.id || index}
