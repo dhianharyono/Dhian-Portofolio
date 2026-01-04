@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/next';
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Dhian Haryono | Portofolio',
+  title: 'Dhian Haryono | Senior Frontend Engineer',
   description: '',
 };
 
