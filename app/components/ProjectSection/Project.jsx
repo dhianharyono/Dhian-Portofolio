@@ -31,7 +31,7 @@ const Project = () => {
         My Projects
       </h2>
       <p className='text-center text-sm md:text-xl text-gray-400 mb-16'>
-        Production systems, not demos
+        Selected Work & Projects
       </p>
       <ul ref={ref} className='grid md:grid-cols-3 gap-6 md:gap-8'>
         {projectsToDisplay.map((project, index) => (

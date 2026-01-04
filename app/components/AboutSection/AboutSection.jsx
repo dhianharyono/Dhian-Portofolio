@@ -35,31 +35,36 @@ const AboutSection = () => {
               deliver pixel-perfect, performant results.
             </p>
             <p className='text-sm md:text-lg text-gray-300 leading-relaxed md:leading-loose text-left'>
-              Currently, I&apos;m leveling up my skills to become a Senior
-              Frontend Developer and open to freelance or remote opportunities.
+              Specializing in performance optimization and scalable architecture
+              for high-traffic applications. Open to challenging freelance or
+              remote opportunities.
             </p>
           </div>
 
           <div className='grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 mb-8'>
             <div className='p-4 rounded-xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-all'>
-              <h3 className='text-3xl font-bold text-primary-400 mb-1'>5+</h3>
-              <p className='text-sm text-gray-400'>Years Exp</p>
+              <h3 className='text-lg md:text-3xl font-bold text-primary-400 mb-1'>
+                5+
+              </h3>
+              <p className='text-xs md:text-sm text-gray-400'>Years Exp</p>
             </div>
             <div className='p-4 rounded-xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-all'>
-              <h3 className='text-3xl font-bold text-secondary-400 mb-1'>
+              <h3 className='text-lg md:text-3xl font-bold text-secondary-400 mb-1'>
+                Enterprise
+              </h3>
+              <p className='text-xs md:text-sm text-gray-400'>Solutions</p>
+            </div>
+            <div className='p-4 rounded-xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-all'>
+              <h3 className='text-lg md:text-3xl font-bold text-primary-400 mb-1'>
                 10+
               </h3>
-              <p className='text-sm text-gray-400'>Projects</p>
+              <p className='text-xs md:text-sm text-gray-400'>Clients</p>
             </div>
             <div className='p-4 rounded-xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-all'>
-              <h3 className='text-3xl font-bold text-primary-400 mb-1'>10+</h3>
-              <p className='text-sm text-gray-400'>Clients</p>
-            </div>
-            <div className='p-4 rounded-xl bg-white/5 border border-white/10 text-center hover:bg-white/10 transition-all'>
-              <h3 className='text-3xl font-bold text-secondary-400 mb-1'>
-                100%
+              <h3 className='text-lg md:text-3xl font-bold text-secondary-400 mb-1'>
+                1.1M+
               </h3>
-              <p className='text-sm text-gray-400'>Commitment</p>
+              <p className='text-xs md:text-sm text-gray-400'>Users Reached</p>
             </div>
           </div>
         </div>

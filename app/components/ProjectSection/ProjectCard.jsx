@@ -2,16 +2,9 @@ import React from 'react';
 import { CodeIcon, EyeIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 
-const ProjectCard = ({
-  title,
-  description,
-  gitUrl,
-  previewUrl,
-  tech = [],
-}) => {
+const ProjectCard = ({ title, description, gitUrl, previewUrl, tech = [] }) => {
   return (
     <div className='rounded-xl bg-[#181818] border border-white/10 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 group shadow-lg p-6'>
-
       {/* Header: Title */}
       <h3 className='text-lg md:text-xl font-bold text-white mb-4 group-hover:text-primary-400 transition-colors'>
         {title}
@@ -37,12 +30,12 @@ const ProjectCard = ({
       </p>
 
       {/* Action Buttons */}
-      <div className='flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-auto pt-6 border-t border-white/5'>
+      <div className='flex sm:flex-row items-stretch sm:items-center gap-3 mt-auto pt-6 border-t border-white/5'>
         {previewUrl && (
           <Link
             href={previewUrl}
             target='_blank'
-            className='flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-primary-600 hover:bg-primary-700 text-white text-sm font-bold transition-all hover:shadow-lg hover:shadow-primary-500/25'
+            className='flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-primary-600 hover:bg-primary-700 text-white text-xs md:text-sm font-bold transition-all hover:shadow-lg hover:shadow-primary-500/25'
           >
             <EyeIcon className='h-5 w-5' />
             Live Demo
@@ -52,9 +45,9 @@ const ProjectCard = ({
           <Link
             href={gitUrl}
             target='_blank'
-            className='flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-[#2A2A2A] hover:bg-[#333] text-white text-sm font-bold transition-colors border border-white/5'
+            className='flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-[#2A2A2A] hover:bg-[#333] text-white text-xs md:text-sm font-bold transition-colors border border-white/5'
           >
-            <CodeIcon className='h-5 w-5' />
+            {/* <CodeIcon className='h-5 w-5' /> */}
             Source Code
           </Link>
         )}

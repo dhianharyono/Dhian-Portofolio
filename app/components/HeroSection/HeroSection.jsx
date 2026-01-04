@@ -44,7 +44,7 @@ const HeroSection = () => {
         >
           <h1 className='text-white mb-2 text-3xl font-extrabold tracking-tight'>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 glow-text'>
-              Hello, I&apos;m
+              I&apos;m
             </span>
           </h1>
           <div className='block mb-0 md:mb-2 text-3xl sm:text-5xl lg:text-7xl font-bold text-white'>
@@ -54,13 +54,13 @@ const HeroSection = () => {
             Senior Front-End Engineer
           </p>
           <p className='text-[#ADB7BE] text-[10px] md:text-lg mb-8 leading-relaxed max-w-2xl'>
-            5+ years building scalable and beautiful web interfaces. Currently
-            freelancing and open for projects.
+            Senior Engineer architecting high-scale enterprise solutions. Proven
+            track record with 1.1M+ active users.
           </p>
           <div>
             <Link href={'#contact'}>
               <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:from-blue-600 hover:via-primary-400 hover:to-secondary-200 text-white shadow-lg hover:shadow-cyan-500/50 transition-all duration-300'>
-                Hire Me
+                Let&apos;s Collaborate
               </button>
             </Link>
           </div>

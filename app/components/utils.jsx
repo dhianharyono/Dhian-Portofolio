@@ -183,9 +183,9 @@ export const experiences = [
     description:
       'Developing high-scale digital platforms for Telkom Group using modern frontend technologies.',
     responsibilities: [
-      'Developed user-friendly web pages using React.js and Next.js for core enterprise applications.',
-      'Collaborated closely with back-end developers and web designers to enhance usability and overall user experience.',
-      'Maintained and optimized legacy codebases to improve performance and scalability.',
+      'Architecting and developing core enterprise applications using React.js and Next.js, ensuring high performance and scalability.',
+      'Driving technical collaboration with cross-functional teams to deliver superior user experiences and robust implementations.',
+      'Modernizing legacy codebases, significantly improving performance metrics and maintainability through strategic refactoring.',
     ],
     achievements: [
       'Delivered platforms used by 1.1M+ users',
