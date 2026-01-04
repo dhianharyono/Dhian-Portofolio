@@ -1,13 +1,12 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section className='lg:py-16 relative'>
+    <section className='lg:py-36 relative'>
       {/* Animated Background Blobs */}
       <motion.div
         animate={{
@@ -42,20 +41,20 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className='col-span-7 place-self-center text-center sm:text-left justify-self-start'
         >
-          <h1 className='text-white mb-2 text-3xl font-extrabold tracking-tight'>
+          <h1 className='text-white mb-2 md:mb-5 text-3xl font-extrabold tracking-tight'>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 glow-text'>
-              I&apos;m
+              Hi, I&apos;m
             </span>
           </h1>
-          <div className='block mb-0 md:mb-2 text-3xl sm:text-5xl lg:text-7xl font-bold text-white'>
+          <div className='block mb-2 md:mb-5 text-3xl sm:text-5xl lg:text-8xl font-bold text-white'>
             Dhian Haryono
           </div>
-          <p className='text-[#ADB7BE] text-lg sm:text-xl lg:text-5xl leading-relaxed max-w-2xl font-bold mb-0 md:mb-2'>
-            Senior Front-End Engineer
+          <p className='text-[#ADB7BE] text-sm sm:text-xl lg:text-3xl leading-relaxed max-w-2xl font-bold mb-2 md:mb-5'>
+            Senior Front-End Engineer & Automation-Oriented Full Stack Developer
           </p>
           <p className='text-[#ADB7BE] text-[10px] md:text-lg mb-8 leading-relaxed max-w-2xl'>
-            Senior Engineer architecting high-scale enterprise solutions. Proven
-            track record with 1.1M+ active users.
+            A passionate developer crafting beautiful web experiences with
+            modern technologies.
           </p>
           <div>
             <Link href={'#contact'}>

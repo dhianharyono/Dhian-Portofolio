@@ -49,6 +49,7 @@ const Project = () => {
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
               tech={project.tech}
+              role={project.role}
             />
           </motion.li>
         ))}

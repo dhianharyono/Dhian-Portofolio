@@ -116,20 +116,26 @@ export const projectsData = [
     title: 'Lumina Modern E-Commerce',
     description:
       'An elegant and user-friendly fashion e-commerce website. Features include product browsing, shopping cart, and secure checkout, providing a seamless online shopping experience.',
-    image: '/images/lumina.png',
-    gitUrl: 'https://github.com/dhianharyono/lumina',
     previewUrl: 'https://lumina-seven-navy.vercel.app/',
     tech: ['React.js', 'Next.js', 'TypeScript', 'Tailwind'],
+    role: 'Frontend Developer',
   },
   {
     id: 2,
-    title: 'Tracer Study SMAN 1 TAWANGSARI',
+    title: 'Tracer Study SMA N 1 Tawangsari',
     description:
       'A web application for tracking and managing alumni data. It allows users to register, update profiles, and view statistics about alumni employment and education history.',
-    image: '/images/tracer-study.png',
-    gitUrl: 'https://github.com/dhianharyono/tracer-study',
     previewUrl: 'https://tracerstudy-smanta.vercel.app/',
-    tech: ['React.js', 'Next.js', 'TypeScript', 'Tailwind'],
+    tech: [
+      'React.js',
+      'Next.js',
+      'TypeScript',
+      'Tailwind',
+      'MongoDB',
+      'Express',
+      'Node.js',
+    ],
+    role: 'Fullstack Developer',
   },
 ];
 
