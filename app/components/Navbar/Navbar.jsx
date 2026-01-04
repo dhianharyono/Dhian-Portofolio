@@ -17,7 +17,7 @@ const Navbar = () => {
           aria-label='Home'
           className='text-2xl md:text-3xl font-extrabold text-white flex items-center gap-2 group'
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+          <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600'>
             DH
           </span>
         </Link>

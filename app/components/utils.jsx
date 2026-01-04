@@ -86,11 +86,11 @@ export const navLinks = [
     path: '#projects',
   },
   {
-    title: 'Skill',
+    title: 'Skills',
     path: '#services',
   },
   {
-    title: 'Contact Me!',
+    title: 'Contact',
     path: '#contact',
   },
 ];
