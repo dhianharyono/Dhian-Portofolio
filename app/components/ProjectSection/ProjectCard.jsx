@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, role, previewUrl, tech = [] }) => {
 
       {/* Company and Role */}
       <div className='flex flex-col mb-4'>
-        <span className='text-sm text-gray-500'>{role}</span>
+        <span className='text-sm text-gray-400'>{role}</span>
       </div>
 
       {/* Description */}
@@ -38,6 +38,7 @@ const ProjectCard = ({ title, description, role, previewUrl, tech = [] }) => {
           <Link
             href={previewUrl}
             target='_blank'
+            aria-label={`Live preview of ${title}`}
             className='flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-center hover:bg-white/10 text-white text-xs md:text-sm font-bold transition-all hover:shadow-lg hover:shadow-primary-500/25'
           >
             Live Preview

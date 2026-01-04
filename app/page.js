@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
       <div className='container mt-24 mx-auto px-6 py-14'>
         <HeroSection />
-        <Link href={'#about'} className='hidden md:block'>
+        <Link href={'#about'} className='hidden md:block' aria-label="Scroll to About Section">
           <ArrowDownIcon className='h-24 w-6 mx-auto mt-10 text-gray-500 animate-bounce' />
         </Link>
         <About />

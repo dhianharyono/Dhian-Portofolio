@@ -44,9 +44,9 @@ const ConnectSection = () => {
       <div className='relative z-10 grid md:grid-cols-2 gap-12 md:gap-20 items-start px-4'>
         {/* Left Column: Get in Touch & Socials */}
         <div>
-          <h5 className='text-xl md:text-3xl font-bold text-white mb-4'>
+          <h2 className='text-xl md:text-3xl font-bold text-white mb-4'>
             Get In Touch
-          </h5>
+          </h2>
           <p className='text-[#ADB7BE] text-sm md:text-base mb-8 max-w-md'>
             Have a project in mind? Let`s discuss how I can help bring your
             ideas to life.
@@ -74,9 +74,9 @@ const ConnectSection = () => {
                 </svg>
               </div>
               <div>
-                <h4 className='text-white font-semibold group-hover:text-primary-400 transition-colors'>
+                <h3 className='text-white font-semibold group-hover:text-primary-400 transition-colors'>
                   Contact Me
-                </h4>
+                </h3>
                 <p className='text-sm text-gray-400'>Chat via WhatsApp</p>
               </div>
             </Link>
@@ -101,17 +101,17 @@ const ConnectSection = () => {
                 </svg>
               </div>
               <div>
-                <h4 className='text-white font-semibold group-hover:text-primary-400 transition-colors'>
+                <h3 className='text-white font-semibold group-hover:text-primary-400 transition-colors'>
                   Email
-                </h4>
+                </h3>
                 <p className='text-sm text-gray-400'>dhianharyono@gmail.com</p>
               </div>
             </Link>
           </div>
 
-          <h4 className='text-xl font-semibold text-white mb-4'>
+          <h3 className='text-xl font-semibold text-white mb-4'>
             Connect With Me
-          </h4>
+          </h3>
           <div className='flex gap-4 items-center'>
             <Link
               href='https://github.com/dhianharyono'

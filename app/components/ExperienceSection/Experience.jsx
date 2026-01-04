@@ -55,7 +55,7 @@ const Experience = () => {
 
                       <div className="flex flex-col mb-4">
                         <span className='text-base font-medium text-gray-300'>{exp.company}</span>
-                        <span className='text-sm text-gray-500'>{exp.type} • {exp.location}</span>
+                        <span className='text-sm text-gray-400'>{exp.type} • {exp.location}</span>
                       </div>
 
                       <p className='text-gray-300 mb-6 text-sm md:text-base leading-relaxed'>
