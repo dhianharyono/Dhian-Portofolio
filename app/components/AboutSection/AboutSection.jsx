@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 const AboutSection = () => {
   return (
-    <section id='about' className='text-white mt-12 md:mt-24 relative'>
+    <section id='about' className='text-white relative'>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className='col-span-4 place-self-center mt-4 lg:mt-0'
+        className='col-span-4 place-self-center'
       >
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full px-4 md:px-0 max-w-6xl mx-auto'>
           <h2 className='text-xl md:text-4xl font-bold text-white mb-2 glow-text text-center'>

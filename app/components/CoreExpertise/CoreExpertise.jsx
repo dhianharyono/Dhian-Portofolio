@@ -81,7 +81,7 @@ const expertiseData = [
 
 const CoreExpertise = () => {
     return (
-        <section id='services' className='mt-32 relative'>
+        <section id='services' className='relative'>
             <div className='text-center mb-16'>
                 <h2 className='text-xl md:text-4xl font-bold text-white mb-2 glow-text'>
                     Core Expertise

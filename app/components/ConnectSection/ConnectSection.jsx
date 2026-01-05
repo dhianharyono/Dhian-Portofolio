@@ -40,7 +40,7 @@ const ConnectSection = () => {
       );
   };
   return (
-    <section id='contact' className='relative py-24 mt-12 md:mt-24'>
+    <section id='contact' className='relative py-24'>
       <div className='relative z-10 grid md:grid-cols-2 gap-12 md:gap-20 items-start px-4'>
         {/* Left Column: Get in Touch & Socials */}
         <div>

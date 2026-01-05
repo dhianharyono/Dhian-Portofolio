@@ -13,17 +13,52 @@ export default function Home() {
   return (
     <main className='flex min-h-screen flex-col bg-[#121212]'>
       <Navbar />
-      <div className='container mt-24 mx-auto px-6 py-14'>
-        <HeroSection />
-        <Link href={'#about'} className='hidden md:block' aria-label="Scroll to About Section">
-          <ArrowDownIcon className='h-24 w-6 mx-auto mt-10 text-gray-500 animate-bounce' />
-        </Link>
-        <About />
-        <Experience />
-        <Project />
-        <CoreExpertise />
-        <Connect />
-      </div>
+
+      {/* Hero Section */}
+      <section className='w-full pt-24 pb-12 bg-[#121212]'>
+        <div className='container mx-auto px-6'>
+          <HeroSection />
+          <Link href={'#about'} className='hidden md:block' aria-label="Scroll to About Section">
+            <ArrowDownIcon className='h-24 w-6 mx-auto mt-10 text-gray-500 animate-bounce' />
+          </Link>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className='w-full py-16 bg-[#181818]'>
+        <div className='container mx-auto px-6'>
+          <About />
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section className='w-full py-16 bg-[#121212]'>
+        <div className='container mx-auto px-6'>
+          <Experience />
+        </div>
+      </section>
+
+      {/* Project Section */}
+      <section className='w-full py-16 bg-[#181818]'>
+        <div className='container mx-auto px-6'>
+          <Project />
+        </div>
+      </section>
+
+      {/* CoreExpertise Section */}
+      <section className='w-full py-16 bg-[#121212]'>
+        <div className='container mx-auto px-6'>
+          <CoreExpertise />
+        </div>
+      </section>
+
+      {/* Connect Section */}
+      <section className='w-full py-16 bg-[#181818]'>
+        <div className='container mx-auto px-6'>
+          <Connect />
+        </div>
+      </section>
+
       <Footer />
     </main>
   );

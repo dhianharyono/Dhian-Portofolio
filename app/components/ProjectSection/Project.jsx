@@ -26,7 +26,7 @@ const Project = () => {
   };
 
   return (
-    <section id='projects' className=' mt-32 relative'>
+    <section id='projects' className='relative'>
       <h2 className='text-center text-xl md:text-4xl font-bold text-white mt-4 mb-2'>
         My Projects
       </h2>

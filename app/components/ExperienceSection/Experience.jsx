@@ -3,7 +3,7 @@ import { experiences } from '../utils';
 
 const Experience = () => {
   return (
-    <div id='experience' className='container mt-32 relative px-4 md:px-0'>
+    <div id='experience' className='relative px-4 md:px-0'>
       <div className='w-full'>
         <h2 className='text-xl md:text-4xl font-bold text-white mb-2 glow-text text-center'>
           Work Experience
