@@ -23,7 +23,7 @@ const ConnectSection = () => {
         'service_g8mcl72',
         'template_tc7md96',
         form.current,
-        'C4ROwvEHT3wxYFxGF'
+        'C4ROwvEHT3wxYFxGF',
       )
       .then(
         (result) => {
@@ -36,7 +36,7 @@ const ConnectSection = () => {
           console.log('Email failed:', error.text);
           setEmailError(true);
           setIsSubmitting(false);
-        }
+        },
       );
   };
   return (
@@ -77,7 +77,7 @@ const ConnectSection = () => {
                 <h3 className='text-white font-semibold group-hover:text-primary-400 transition-colors'>
                   Contact Me
                 </h3>
-                <p className='text-sm text-gray-400'>Chat via WhatsApp</p>
+                <p className='text-sm text-gray-400'>Chat via whatsapp</p>
               </div>
             </Link>
 
@@ -104,7 +104,7 @@ const ConnectSection = () => {
                 <h3 className='text-white font-semibold group-hover:text-primary-400 transition-colors'>
                   Email
                 </h3>
-                <p className='text-sm text-gray-400'>dhianharyono@gmail.com</p>
+                <p className='text-sm text-gray-400'>Send me an email</p>
               </div>
             </Link>
           </div>
@@ -194,7 +194,7 @@ const ConnectSection = () => {
             <button
               type='submit'
               disabled={isSubmitting}
-              className='bg-primary-600 hover:bg-primary-700 text-white font-medium py-4 px-5 rounded-lg w-full transition-colors duration-200 disabled:opacity-50'
+              className='bg-primary-600 hover:bg-primary-700 text-xs md:text-sm text-white font-medium py-4 px-5 rounded-lg w-full transition-colors duration-200 disabled:opacity-50'
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>

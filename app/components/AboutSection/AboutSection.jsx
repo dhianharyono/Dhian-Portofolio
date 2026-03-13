@@ -6,9 +6,10 @@ const AboutSection = () => {
   return (
     <section id='about' className='text-white relative'>
       <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, margin: "-100px" }}
         className='col-span-4 place-self-center'
       >
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full px-4 md:px-0 max-w-6xl mx-auto'>

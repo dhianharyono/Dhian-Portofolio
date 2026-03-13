@@ -41,24 +41,24 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className='col-span-7 place-self-center text-center sm:text-left justify-self-start'
         >
-          <h1 className='text-white mb-2 md:mb-5 text-3xl font-extrabold tracking-tight'>
+          <h1 className='text-white mb-2 md:mb-5 text-lg md:text-3xl font-extrabold tracking-tight'>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 glow-text'>
               Hi, I&apos;m
             </span>
           </h1>
-          <div className='block mb-2 md:mb-5 text-3xl sm:text-5xl lg:text-8xl font-bold text-white'>
+          <div className='block mb-2 md:mb-5 text-3xl md:text-5xl lg:text-8xl font-bold text-white'>
             Dhian Haryono
           </div>
-          <p className='text-[#ADB7BE] text-sm sm:text-xl lg:text-3xl leading-relaxed max-w-2xl font-bold mb-2 md:mb-5'>
-            Senior Front-End Engineer & Automation-Oriented Full Stack Developer
+          <p className='text-[#ADB7BE] text-sm md:text-xl lg:text-3xl leading-relaxed max-w-2xl font-bold mb-2 md:mb-3'>
+            Senior Front-End Engineer
           </p>
-          <p className='text-[#ADB7BE] text-[10px] md:text-lg mb-8 leading-relaxed max-w-2xl'>
+          <p className='text-[#ADB7BE] text-xs md:text-lg mb-8 leading-relaxed max-w-2xl opacity-80'>
             A passionate developer crafting beautiful web experiences with
             modern technologies.
           </p>
-          <div>
-            <Link href={'#contact'}>
-              <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:from-blue-600 hover:via-primary-400 hover:to-secondary-200 text-white shadow-lg hover:shadow-cyan-500/50 transition-all duration-300'>
+          <div className='flex flex-col sm:flex-row gap-4'>
+            <Link href={'#contact'} className='w-full md:w-fit'>
+              <button className='px-8 py-4 w-full text-xs md:text-sm font-bold rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:from-blue-600 hover:via-primary-400 hover:to-secondary-200 text-white shadow-lg hover:shadow-cyan-500/50 transition-all duration-300'>
                 Let&apos;s Collaborate
               </button>
             </Link>
@@ -75,8 +75,8 @@ const HeroSection = () => {
             <Image
               className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full'
               src={'/images/hero-image.jpg'}
-              width={300}
-              height={300}
+              width={350}
+              height={350}
               alt='hero-image'
             />
           </div>

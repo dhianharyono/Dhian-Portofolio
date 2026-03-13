@@ -117,7 +117,7 @@ export const projectsData = [
     description:
       'An elegant and user-friendly fashion e-commerce website. Features include product browsing, shopping cart, and secure checkout, providing a seamless online shopping experience.',
     previewUrl: 'https://lumina-seven-navy.vercel.app/',
-    tech: ['React.js', 'Next.js', 'TypeScript', 'Tailwind'],
+    tech: ['Next.js', 'TypeScript', 'Tailwind'],
     role: 'Frontend Developer',
   },
   {
@@ -127,7 +127,38 @@ export const projectsData = [
       'A web application for tracking and managing alumni data. It allows users to register, update profiles, and view statistics about alumni employment and education history.',
     previewUrl: 'https://tracerstudy-smanta.vercel.app/',
     tech: [
-      'React.js',
+      'Next.js',
+      'TypeScript',
+      'Tailwind',
+      'MongoDB',
+      'Express',
+      'Node.js',
+    ],
+    role: 'Fullstack Developer',
+  },
+  {
+    id: 3,
+    title: 'Cetha Technologies',
+    description:
+      'A corporate website for Cetha Technologies, showcasing their services and portfolio. The site features a clean design, responsive layout, and easy navigation to highlight the company’s expertise in web development.',
+    previewUrl: 'https://cetha-tech.vercel.app/',
+    tech: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind',
+      'MongoDB',
+      'Express',
+      'Node.js',
+    ],
+    role: 'Fullstack Developer',
+  },
+  {
+    id: 4,
+    title: 'Zahra Krisnadi Dietisient Portfolio',
+    description:
+      'A personal portfolio website for Zahra Krisnadi, a dietitian, showcasing her services and expertise. The site features a clean design, responsive layout, and easy navigation to highlight her professional background.',
+    previewUrl: 'https://zahrakrisnadi.vercel.app/',
+    tech: [
       'Next.js',
       'TypeScript',
       'Tailwind',
@@ -185,7 +216,7 @@ export const experiences = [
     company: 'Telkom Indonesia',
     type: 'Full-time',
     duration: 'Aug 2019 - Present',
-    location: 'Bandung Area, West Java, Indonesia',
+    location: 'Bandung, West Java, Indonesia',
     description:
       'Developing high-scale digital platforms for Telkom Group using modern frontend technologies.',
     responsibilities: [
@@ -207,7 +238,7 @@ export const experiences = [
     company: 'Telkom Indonesia',
     type: 'Internship',
     duration: 'Jan 2019 - Jun 2019',
-    location: 'Bandung Area, West Java, Indonesia',
+    location: 'Bandung, West Java, Indonesia',
     description:
       'Contributed to the Smart City Nusantara project as a Junior Frontend Developer.',
     responsibilities: [

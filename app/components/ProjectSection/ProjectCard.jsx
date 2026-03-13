@@ -1,52 +1,112 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { ExternalLinkIcon } from '@heroicons/react/solid';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const ProjectCard = ({ title, description, role, previewUrl, tech = [] }) => {
+  const [showAllTech, setShowAllTech] = useState(false);
+  const MAX_TECH = 3;
+  const displayedTech = tech.slice(0, MAX_TECH);
+  const remainingTech = tech.slice(MAX_TECH);
+
   return (
-    <div className='rounded-xl bg-[#181818] border border-white/10 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 group shadow-lg p-6'>
-      {/* Header: Title */}
-      <h3 className='text-lg md:text-xl font-bold text-white mb-2 group-hover:text-primary-400 transition-colors'>
-        {title}
-      </h3>
+    <motion.div
+      whileHover={{ y: -10 }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+      className='relative group flex flex-col h-full bg-[#1e1e1e] border border-white/5 rounded-2xl hover:border-primary-500/30 transition-all duration-500 shadow-2xl overflow-visible'
+    >
+      {/* Subtle Gradient Glow */}
+      <div className='absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-secondary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl pointer-events-none' />
 
-      {/* Company and Role */}
-      <div className='flex flex-col mb-4'>
-        <span className='text-sm text-gray-400'>{role}</span>
-      </div>
-
-      {/* Description */}
-      <p className='text-gray-400 mb-8 text-sm md:text-base leading-relaxed flex-grow'>
-        {description}
-      </p>
-      {/* Tech Stack - Moved up for context before description */}
-      {tech.length > 0 && (
-        <div className='flex flex-wrap gap-2 mb-4'>
-          {tech.map((item, idx) => (
-            <span
-              key={idx}
-              className='text-[10px] uppercase tracking-wider font-bold text-primary-300 bg-primary-500/10 px-2 py-1 rounded-md'
-            >
-              {item}
-            </span>
-          ))}
-        </div>
-      )}
-      {/* Action Buttons */}
-      <div className='flex sm:flex-row items-stretch sm:items-center gap-3 mt-auto pt-6 border-t border-white/5'>
-        {previewUrl && (
-          <Link
-            href={previewUrl}
-            target='_blank'
-            aria-label={`Live preview of ${title}`}
-            className='flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-center hover:bg-white/10 text-white text-xs md:text-sm font-bold transition-all hover:shadow-lg hover:shadow-primary-500/25'
+      <div className='p-6 md:p-8 flex flex-col h-full relative z-10'>
+        {/* Header Section */}
+        <div className='mb-6'>
+          <div className='flex items-center justify-between gap-4'>
+            <h3 className='text-xl md:text-2xl font-bold text-white tracking-tight group-hover:text-primary-400 transition-colors duration-300'>
+              {title}
+            </h3>
+          </div>
+          <p
+            className={`text-sm font-semibold mt-2 uppercase tracking-widest mt-2 ${role === 'Fullstack Developer' ? 'text-primary-400' : 'text-secondary-400'}`}
           >
-            Live Preview
-            <ExternalLinkIcon className='h-5 w-5' />
-          </Link>
+            {role}
+          </p>
+        </div>
+
+        {/* Description Section */}
+        <div className='relative mb-8'>
+          <p className='text-gray-400 text-sm md:text-base leading-relaxed transition-all duration-500 ease-in-out'>
+            {description}
+          </p>
+        </div>
+
+        {/* Tech Stack Section */}
+        {tech.length > 0 && (
+          <div className='mt-auto'>
+            <div className='flex flex-wrap gap-2 mb-6'>
+              {displayedTech.map((item, idx) => (
+                <span
+                  key={idx}
+                  className='text-[10px] md:text-xs font-bold text-primary-300 bg-primary-500/5 border border-primary-500/10 px-3 py-1.5 rounded-lg shadow-sm'
+                >
+                  {item}
+                </span>
+              ))}
+
+              {remainingTech.length > 0 && (
+                <div className='relative inline-block'>
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setShowAllTech(!showAllTech);
+                    }}
+                    className='text-[10px] md:text-xs font-bold text-gray-500 hover:text-white bg-white/5 border border-white/5 px-3 py-1.5 rounded-lg transition-all hover:bg-white/10'
+                  >
+                    +{remainingTech.length} more
+                  </button>
+
+                  <AnimatePresence>
+                    {showAllTech && (
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.95, y: -10 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.95, y: -10 }}
+                        className='absolute bottom-full right-0 md:left-0 mb-3 p-3 bg-[#2a2a2a] border border-white/10 rounded-xl shadow-2xl z-50 w-48 md:w-56 flex flex-wrap gap-2 ring-1 ring-white/5 backdrop-blur-xl'
+                      >
+                        {remainingTech.map((item, idx) => (
+                          <span
+                            key={idx}
+                            className='text-[10px] font-semibold text-gray-300 bg-white/5 px-2.5 py-1 rounded-md border border-white/10'
+                          >
+                            {item}
+                          </span>
+                        ))}
+                        {/* Little triangle arrow */}
+                        <div className='absolute top-full right-6 md:left-6 w-3 h-3 bg-[#2a2a2a] border-r border-b border-white/10 transform rotate-45 -translate-y-1.5' />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+            </div>
+
+            {/* CTA Button */}
+            {previewUrl && (
+              <Link
+                href={previewUrl}
+                target='_blank'
+                className='inline-flex items-center justify-center w-full group/btn'
+              >
+                <div className='w-full px-6 py-3.5 rounded-xl bg-gradient-to-r from-primary-600/10 to-primary-500/5 border border-primary-500/20 text-white text-sm font-black tracking-wide transition-all duration-500 group-hover/btn:from-primary-600 group-hover/btn:to-blue-600 group-hover/btn:border-primary-400 group-hover/btn:shadow-[0_0_25px_rgba(37,99,235,0.4)] flex items-center justify-center gap-3'>
+                  View Project
+                  <ExternalLinkIcon className='h-4 w-4 group-hover/btn:translate-x-1 transition-transform' />
+                </div>
+              </Link>
+            )}
+          </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

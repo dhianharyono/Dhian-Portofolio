@@ -1,16 +1,25 @@
+'use client';
 import React from 'react';
 import { experiences } from '../utils';
+import { motion } from 'framer-motion';
 
 const Experience = () => {
   return (
     <div id='experience' className='relative px-4 md:px-0'>
       <div className='w-full'>
-        <h2 className='text-xl md:text-4xl font-bold text-white mb-2 glow-text text-center'>
-          Work Experience
-        </h2>
-        <p className='text-center text-sm md:text-xl text-gray-400 mb-12 md:mb-16'>
-          Roles, responsibilities, and measurable impact
-        </p>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h2 className='text-xl md:text-4xl font-bold text-white mb-2 glow-text text-center'>
+            Work Experience
+          </h2>
+          <p className='text-center text-sm md:text-xl text-gray-400 mb-12 md:mb-16'>
+            Roles, responsibilities, and measurable impact
+          </p>
+        </motion.div>
 
         <div className='relative w-full max-w-6xl mx-auto'>
           {/* Central Line */}
@@ -21,8 +30,12 @@ const Experience = () => {
             {experiences.map((exp, index) => {
               const isEven = index % 2 === 0;
               return (
-                <div
+                <motion.div
                   key={exp.id}
+                  initial={{ opacity: 0, x: isEven ? 50 : -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  viewport={{ once: true, margin: "-50px" }}
                   className={`flex flex-col md:flex-row items-center justify-between md:gap-12 relative w-full ${isEven ? 'md:flex-row-reverse' : ''}`}
                 >
                   {/* Timeline Dot */}
@@ -97,7 +110,7 @@ const Experience = () => {
                       )}
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
