@@ -27,7 +27,7 @@ const ProjectCard = ({ title, description, role, previewUrl, tech = [] }) => {
             </h3>
           </div>
           <p
-            className={`text-sm font-semibold mt-2 uppercase tracking-widest mt-2 ${role === 'Fullstack Developer' ? 'text-primary-400' : 'text-secondary-400'}`}
+            className={`text-sm font-semibold uppercase tracking-widest mt-2 ${role === 'Fullstack Developer' ? 'text-primary-400' : 'text-secondary-400'}`}
           >
             {role}
           </p>
