@@ -37,15 +37,6 @@ const ProjectCard = ({ title, description, role, previewUrl, image, tech = [] })
               {role}
             </span>
           </div>
-          {/* Hover overlay with preview icon */}
-          <div className='absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center'>
-            {previewUrl && (
-              <div className='flex items-center gap-2 text-white text-sm font-semibold bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20'>
-                <ExternalLinkIcon className='h-4 w-4' />
-                View Live
-              </div>
-            )}
-          </div>
         </div>
       )}
 

@@ -6,12 +6,13 @@ import Footer from './components/Footer/Footer';
 import Connect from './components/ConnectSection/ConnectSection';
 import Experience from './components/ExperienceSection/Experience';
 import CoreExpertise from './components/CoreExpertise/CoreExpertise';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import { ArrowDownIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col bg-[#121212] overflow-x-hidden'>
+    <main className='flex min-h-screen flex-col bg-[#121212] overflow-x-hidden relative'>
       <Navbar />
 
       {/* Hero Section */}
@@ -60,6 +61,7 @@ export default function Home() {
       </section>
 
       <Footer />
+      <ScrollToTop />
     </main>
   );
 }
