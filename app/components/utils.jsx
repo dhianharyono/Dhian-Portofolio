@@ -117,6 +117,7 @@ export const projectsData = [
     description:
       'An elegant and user-friendly fashion e-commerce website. Features include product browsing, shopping cart, and secure checkout, providing a seamless online shopping experience.',
     previewUrl: 'https://lumina-seven-navy.vercel.app/',
+    image: '/images/lumina.png',
     tech: ['Next.js', 'TypeScript', 'Tailwind'],
     role: 'Frontend Developer',
   },
@@ -126,6 +127,7 @@ export const projectsData = [
     description:
       'A web application for tracking and managing alumni data. It allows users to register, update profiles, and view statistics about alumni employment and education history.',
     previewUrl: 'https://tracerstudy-smanta.vercel.app/',
+    image: '/images/tracer-study.png',
     tech: [
       'Next.js',
       'TypeScript',
@@ -140,8 +142,9 @@ export const projectsData = [
     id: 3,
     title: 'Cetha Technologies',
     description:
-      'A corporate website for Cetha Technologies, showcasing their services and portfolio. The site features a clean design, responsive layout, and easy navigation to highlight the company’s expertise in web development.',
+      'A corporate website for Cetha Technologies, showcasing their services and portfolio. The site features a clean design, responsive layout, and easy navigation to highlight the company\'s expertise in web development.',
     previewUrl: 'https://cetha-tech.vercel.app/',
+    image: '/images/cetha-tech.png',
     tech: [
       'Next.js',
       'TypeScript',
@@ -158,6 +161,7 @@ export const projectsData = [
     description:
       'A personal portfolio website for Zahra Krisnadi, a dietitian, showcasing her services and expertise. The site features a clean design, responsive layout, and easy navigation to highlight her professional background.',
     previewUrl: 'https://zahrakrisnadi.vercel.app/',
+    image: '/images/zahra-krisnadi.png',
     tech: [
       'Next.js',
       'TypeScript',

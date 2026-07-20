@@ -7,6 +7,9 @@ const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
 export const metadata = {
   title: 'Dhian Haryono | Senior Frontend Engineer',
   description: '',
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 export default function RootLayout({ children }) {

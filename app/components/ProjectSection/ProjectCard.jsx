@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ExternalLinkIcon } from '@heroicons/react/solid';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const ProjectCard = ({ title, description, role, previewUrl, tech = [] }) => {
+const ProjectCard = ({ title, description, role, previewUrl, image, tech = [] }) => {
   const [showAllTech, setShowAllTech] = useState(false);
   const MAX_TECH = 3;
   const displayedTech = tech.slice(0, MAX_TECH);
@@ -13,29 +14,62 @@ const ProjectCard = ({ title, description, role, previewUrl, tech = [] }) => {
     <motion.div
       whileHover={{ y: -10 }}
       transition={{ duration: 0.4, ease: 'easeOut' }}
-      className='relative group flex flex-col h-full bg-[#1e1e1e] border border-white/5 rounded-2xl hover:border-primary-500/30 transition-all duration-500 shadow-2xl overflow-visible'
+      className='relative group flex flex-col h-full bg-[#1e1e1e] border border-white/5 rounded-2xl hover:border-primary-500/30 transition-all duration-500 shadow-2xl overflow-hidden'
     >
       {/* Subtle Gradient Glow */}
-      <div className='absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-secondary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl pointer-events-none' />
+      <div className='absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-secondary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl pointer-events-none z-10' />
 
-      <div className='p-6 md:p-8 flex flex-col h-full relative z-10'>
+      {/* Thumbnail */}
+      {image && (
+        <div className='relative w-full aspect-video overflow-hidden rounded-t-2xl flex-shrink-0 bg-[#111]'>
+          <Image
+            src={image}
+            alt={`${title} preview`}
+            fill
+            className='object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105'
+            sizes='(max-width: 768px) 85vw, 33vw'
+          />
+          {/* Bottom gradient fade */}
+          <div className='absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#1e1e1e] to-transparent' />
+          {/* Role badge on thumbnail */}
+          <div className='absolute top-3 left-3'>
+            <span className={`text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full backdrop-blur-sm border ${role === 'Fullstack Developer' ? 'text-primary-300 bg-primary-500/20 border-primary-500/30' : 'text-secondary-300 bg-secondary-500/20 border-secondary-500/30'}`}>
+              {role}
+            </span>
+          </div>
+          {/* Hover overlay with preview icon */}
+          <div className='absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center'>
+            {previewUrl && (
+              <div className='flex items-center gap-2 text-white text-sm font-semibold bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20'>
+                <ExternalLinkIcon className='h-4 w-4' />
+                View Live
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      <div className='p-6 md:p-7 flex flex-col flex-1 relative z-10'>
         {/* Header Section */}
-        <div className='mb-6'>
+        <div className='mb-4'>
           <div className='flex items-center justify-between gap-4'>
-            <h3 className='text-xl md:text-2xl font-bold text-white tracking-tight group-hover:text-primary-400 transition-colors duration-300'>
+            <h3 className='text-lg md:text-xl font-bold text-white tracking-tight group-hover:text-primary-400 transition-colors duration-300 line-clamp-1'>
               {title}
             </h3>
           </div>
-          <p
-            className={`text-sm font-semibold uppercase tracking-widest mt-2 ${role === 'Fullstack Developer' ? 'text-primary-400' : 'text-secondary-400'}`}
-          >
-            {role}
-          </p>
+          {/* Show role text only when no image (fallback) */}
+          {!image && (
+            <p
+              className={`text-sm font-semibold uppercase tracking-widest mt-2 ${role === 'Fullstack Developer' ? 'text-primary-400' : 'text-secondary-400'}`}
+            >
+              {role}
+            </p>
+          )}
         </div>
 
         {/* Description Section */}
-        <div className='relative mb-8'>
-          <p className='text-gray-400 text-sm md:text-base leading-relaxed transition-all duration-500 ease-in-out'>
+        <div className='relative mb-6'>
+          <p className='text-gray-400 text-sm leading-relaxed line-clamp-3'>
             {description}
           </p>
         </div>
@@ -43,7 +77,7 @@ const ProjectCard = ({ title, description, role, previewUrl, tech = [] }) => {
         {/* Tech Stack Section */}
         {tech.length > 0 && (
           <div className='mt-auto'>
-            <div className='flex flex-wrap gap-2 mb-6'>
+            <div className='flex flex-wrap gap-2 mb-5'>
               {displayedTech.map((item, idx) => (
                 <span
                   key={idx}
