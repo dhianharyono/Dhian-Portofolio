@@ -14,23 +14,23 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@vercel/analytics": "^1.5.0",
-    "next": "^14.1.1",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.2.25",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
     "react-type-animation": "^3.2.0",
-    "resend": "^2.0.0"
+    "resend": "^2.1.0"
   },
   "devDependencies": {
     "@heroicons/react": "^1.0.6",
-    "@types/node": "24.0.3",
-    "@types/react": "19.1.8",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "^14.1.1",
-    "framer-motion": "^10.16.4",
-    "postcss": "^8",
+    "@types/node": "^20.17.19",
+    "@types/react": "^18.3.18",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.25",
+    "framer-motion": "^10.18.0",
+    "postcss": "^8.5.2",
     "react-animated-numbers": "^0.16.0",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.4.17"
   }
 }
